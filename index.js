@@ -65,13 +65,11 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 
 function is31Flavors(arr) {
     if (arr.length === 31) {
-        console.log("true")
+        return true
     } else {
-        console.log("false")
+        return false
     }
 };
-
-is31Flavors(originalFlavors);
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
 Corporate has come to you with an idea for a new flavor: Rainbow Sherbert! They think this will be a game changer. You need to modify the array to include this flavor. 
@@ -102,9 +100,10 @@ Use the removeLastFlavor function below to do the following:
     For example: running removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]
 */
 
-function removeLastFlavor(/*your code here*/){
-   /*your code here*/
-}
+function removeLastFlavor(arr) {
+    arr.pop()
+    return arr
+};
 
 
 
